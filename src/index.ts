@@ -8,3 +8,5 @@ export function twitterSnowflakeToDate(id_str: string) {
   }
   return new Date((+bigInt(id_str).shiftRight(22)) + TWITTER_START_EPOCH);
 }
+
+export default twitterSnowflakeToDate;
